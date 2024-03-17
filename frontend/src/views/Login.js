@@ -29,7 +29,7 @@ function Login() {
       if (response.data.message === "Login successful") {
         cookies.set("user", email, { path: "/" });
         sessionStorage.setItem("email", email);
-        history("/admin", { state: { id: email } });
+        history("/student", { state: { id: email } });
       } else if (response.data.message === "User not found") {
         alert("User not found");
       } else if (response.data.message === "Invalid password") {

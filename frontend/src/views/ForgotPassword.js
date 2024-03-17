@@ -15,7 +15,7 @@ const ForgotPassword = () => {
 
     try {
       // Check if the email exists
-      const emailCheckResponse = await axios.post('http://localhost:3001/api/check-email', { email });
+      const emailCheckResponse = await axios.get('http://localhost:3001/api/check-email', { email });
 
       if (emailCheckResponse.data.exists) {
         // Email exists, show new password and confirm password fields

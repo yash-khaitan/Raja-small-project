@@ -17,13 +17,14 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Notifications from "views/Notifications.js";
-import Icons from "views/Icons.js";
-import Typography from "views/Typography.js";
-import TableList from "views/Tables.js";
+// import Notifications from "views/Notifications.js";
+// import Icons from "views/Icons.js";
+// import Typography from "views/Typography.js";
+// import TableList from "views/Tables.js";
 
-import UserPage from "views/User.js";
-import UpgradeToPro from "views/Upgrade.js";
+// import UserPage from "views/User.js";
+// import UpgradeToPro from "views/Upgrade.js";
+import User from "views/User";
 
 var routes = [
   {
@@ -31,52 +32,60 @@ var routes = [
     name: "Dashboard",
     icon: "nc-icon nc-chart-bar-32",  // Example icon class for Dashboard
     component: <Dashboard />,
-    layout: "/admin",
+    layout: "/student",
+    // layout: "/admin",
   },
-  {
-    path: "/Icons",
+  // {
+  //   path: "/Icons",
+  //   name: "Manage Student",
+  //   icon: "nc-icon nc-single-02",  // New icon class for Manage Student
+  //   component: <Icons />,
+  //   layout: "/admin",
+  // },
+  
+   {
+    path: "/userprofile",
     name: "Manage Student",
     icon: "nc-icon nc-single-02",  // New icon class for Manage Student
-    component: <Icons />,
-    layout: "/admin",
+    component: <User />,
+    layout: "/student",
   },
   
-  
-  {
-    path: "/notifications",
-    name: "Manage Faculties",
-    icon: "nc-icon nc-hat-3",  // Example icon class for Manage Faculties
-    component: <Notifications />,
-    layout: "/admin",
-  },
-  {
-    path: "/user-page",
-    name: "Manage Course",
-    icon: "nc-icon nc-bookmark-2",  // Example icon class for Manage Course
-    component: <UserPage />,
-    layout: "/admin",
-  },
-  {
-    path: "/tables",
-    name: "Manage Schedule",
-    icon: "nc-icon nc-calendar-60",  // Example icon class for Manage Schedule
-    component: <TableList />,
-    layout: "/admin",
-  },
-  {
-    path: "/typography",
-    name: "Manage Exam",
-    icon: "nc-icon nc-paper",  // Example icon class for Manage Exam
-    component: <Typography />,
-    layout: "/admin",
-  },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Manage Certification",
-    icon: "nc-icon nc-badge",  // Example icon class for Manage Certification (Pro)
-    component: <UpgradeToPro />,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/notifications",
+  //   name: "Manage Faculties",
+  //   icon: "nc-icon nc-hat-3",  // Example icon class for Manage Faculties
+  //   component: <Notifications />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/user-page",
+  //   name: "Manage Course",
+  //   icon: "nc-icon nc-bookmark-2",  // Example icon class for Manage Course
+  //   component: <UserPage />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/tables",
+  //   name: "Manage Schedule",
+  //   icon: "nc-icon nc-calendar-60",  // Example icon class for Manage Schedule
+  //   component: <TableList />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/typography",
+  //   name: "Manage Exam",
+  //   icon: "nc-icon nc-paper",  // Example icon class for Manage Exam
+  //   component: <Typography />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   pro: true,
+  //   path: "/upgrade",
+  //   name: "Manage Certification",
+  //   icon: "nc-icon nc-badge",  // Example icon class for Manage Certification (Pro)
+  //   component: <UpgradeToPro />,
+  //   layout: "/admin",
+  // },
 ];
 export default routes;

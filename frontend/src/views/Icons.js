@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardHeader, CardBody, CardTitle, Row, Col, Table } from 'reactstrap';
 
 const TableComponent = () => {
-  const [tableData, setTableData] = useState([
+  const [tableData, ] = useState([
     { username: 'JohnDoe', phone: '555-1234', email: 'john@example.com', category: 'Admin' },
     { username: 'JaneSmith', phone: '555-5678', email: 'jane@example.com', category: 'User' },
     // Add more data as needed
